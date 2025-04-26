@@ -173,7 +173,7 @@ a:hover {
 }
 
 .sect-pt4 {
-  padding-top: 4rem;
+  padding-bottom: 1rem;
 }
 
 .sect-mt4 {
@@ -189,12 +189,12 @@ a:hover {
 
 /*--/ Title A /--*/
 .title-box {
-  margin-bottom: 4rem;
+  margin: 3.5rem 0rem;
 }
 
 .title-a {
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -212,10 +212,6 @@ a:hover {
 }
 
 /*--/ Title Left /--*/
-.title-box-2 {
-  margin-bottom: 3rem;
-}
-
 .title-left {
   font-size: 2rem;
   position: relative;
@@ -240,9 +236,9 @@ a:hover {
   position: relative;
   background-color: #fff;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -864,6 +860,8 @@ a:hover {
 .about-mf .about-img img {
   margin-left: 0px;
   border-radius: 20px !important;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 767px) {
@@ -896,7 +894,7 @@ a:hover {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   text-align: center;
 }
 
@@ -935,6 +933,12 @@ a:hover {
   color: #4e4e4e;
 }
 
+@media (max-width: 991px) {
+  .service-box {
+    margin-bottom: 3rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
@@ -969,11 +973,17 @@ a:hover {
 # Portfolio
 --------------------------------------------------------------*/
 .work-box {
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
   border-radius: 1rem;
+}
+
+@media (max-width: 991px) {
+  .work-box {
+    margin-bottom: 3rem;
+  }
 }
 
 .work-box:hover img {
@@ -1510,11 +1520,17 @@ footer .credits a {
 }
 
 .testimonials-slider {
+  border: 0;
   border-radius: 1rem;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 .lead {
   font-size: 1rem !important;
   font-weight: normal !important;
   color: #4e4e4e;
+}
+
+.typed-cursor {
+  color: var(--main-color);
 }
